@@ -1,0 +1,19 @@
+from numpy.f2py.symbolic import as_ge
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = as_ge
+
+    @classmethod
+    def from_string(cls, data):
+        name, age = data.split('-')
+        return cls (name, int(age))
+
+
+p = Person.from_string("Nam-20")
+
+print(p.name, p.age)
+
+
