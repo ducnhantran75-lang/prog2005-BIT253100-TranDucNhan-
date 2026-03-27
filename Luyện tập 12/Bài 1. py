@@ -1,0 +1,8 @@
+weight = float(input("nhap khoi luong co the: "))
+height = float(input("nhap chieu cao co the: "))
+
+BMI = weight / ( height * height )
+print("nhap chieu cao co the: ")
+print("nhap can nang co the: ")
+print(f'chi so BIM cua ban la {BMI}')
+
